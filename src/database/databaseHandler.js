@@ -1,4 +1,7 @@
+export {uploadImage as uploadImage};
 const { Pool, Client } = require("pg");
+
+
 
 const credentials = {
     user: "postgres",
@@ -38,6 +41,7 @@ async function addEvent(title, tag, due_date, created_at){
     return "localhost:8080/events/"+id;
 }
 
+//Odstrani event
 async function removeEvent(id) {
     const remove = `
     DELETE FROM timeline WHERE id = $1
@@ -46,6 +50,7 @@ async function removeEvent(id) {
     return Pool.query(remove, values);
 }
 
+//Vrati posledny event ktory sa v blizkej dobe stal
 async function getMostRecentEvent() {
     const select = `
     SELECT * FROM timeline WHERE timeline.due_date < $1
@@ -57,6 +62,7 @@ async function getMostRecentEvent() {
     return Pool.query(select, values);
 }
 
+//vrati ID posledneho eventu ktory sa stal
 async function getMostRecentEventId() {
     const select = `
     SELECT id FROM timeline WHERE timeline.due_date < $1
@@ -66,4 +72,31 @@ async function getMostRecentEventId() {
     const values = [new Date().toISOString().slice(0, 19).replace('T', ' ')]
 
     return Pool.query(select, values);
+}
+
+//nahraje obrazok do databazy ako base64 a vrati  jeho ID v danej databaze
+function uploadImage(file) {
+
+    const insert = `
+    INSERT INTO images(image)
+    VALUES ($1)
+    RETURNING id
+  `;
+
+    const values = [file]
+    return Pool.query(insert,values);
+}
+
+//na zaklade ID vrati objekt Image() [skonvertovany base64 na obrazok]
+function getImage(id) {
+
+    const select = `
+    SELECT image FROM images WHERE id = $1
+  `;
+    const values = [id]
+
+    var image = new Image();
+    image.src = Pool.query(select, values);
+    return image;
+
 }

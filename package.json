@@ -2,6 +2,8 @@
   "name": "hackathon_visma",
   "version": "1.0.0",
   "dependencies": {
+    "@cheprasov/qrcode": "^0.1.0",
+    "ftp": "^0.3.10",
     "pg": "^8.7.3"
   }
 }
