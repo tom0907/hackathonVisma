@@ -1,7 +1,8 @@
-stages:          # List of stages for jobs, and their order of execution
-  - build
-
-build-job:      
+docker-build:
+  image: docker:latest
   stage: build
+  services:
+    - docker:dind
   script:
-    - docker compose up -d
+    - docker-compose up
+
