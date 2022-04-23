@@ -1,0 +1,7 @@
+stages:          # List of stages for jobs, and their order of execution
+  - build
+
+build-job:      
+  stage: build
+  script:
+    - docker compose up -d
