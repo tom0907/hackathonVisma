@@ -1,5 +1,4 @@
 import './App.css';
-import Nav from './nav';
 import React from 'react';
 import Clock from 'react-live-clock';
 import Timeline from './timeline';
