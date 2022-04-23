@@ -1,10 +1,13 @@
 import './App.css';
+import Calendar from 'react-calendar'
+
 
 function filter() {
   return (
-    <div className="App">
+    <div className="filter">
       <header>
-        Filterrrrrr
+        TU DAJ DATUM
+        <Calendar />
       </header>
     </div>
   );

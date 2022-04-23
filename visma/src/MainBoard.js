@@ -9,8 +9,8 @@ function nav() {
     <div>
         <Nav />
         <Timeline />
-        <Filter />
-        <Komponenticek />    
+        <Komponenticek /> 
+        <Filter />   
     </div>
   );
 }
