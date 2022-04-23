@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  database:
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=vismatimeline
+    volumes:
+      - ./src/database/initialize.sql:/docker-entrypoint-initdb.d/init.sql
+  apache-server:
+    build: ./src/apache
+    ports:
+      - "8080:8080"
+      - "80:80"
