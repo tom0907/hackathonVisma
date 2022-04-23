@@ -37,3 +37,33 @@ async function addEvent(title, tag, due_date, created_at){
     let id = Pool.query(insert, values);
     return "localhost:8080/events/"+id;
 }
+
+async function removeEvent(id) {
+    const remove = `
+    DELETE FROM timeline WHERE id = $1
+  `;
+    const values = [id];
+    return Pool.query(remove, values);
+}
+
+async function getMostRecentEvent() {
+    const select = `
+    SELECT * FROM timeline WHERE timeline.due_date < $1
+    ORDER BY timeline.date DESC LIMIT 1 
+
+  `;
+    const values = [new Date().toISOString().slice(0, 19).replace('T', ' ')]
+
+    return Pool.query(select, values);
+}
+
+async function getMostRecentEventId() {
+    const select = `
+    SELECT id FROM timeline WHERE timeline.due_date < $1
+    ORDER BY timeline.date DESC LIMIT 1 
+
+  `;
+    const values = [new Date().toISOString().slice(0, 19).replace('T', ' ')]
+
+    return Pool.query(select, values);
+}
