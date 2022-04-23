@@ -13,10 +13,9 @@ function Tv() {
 
     return (
       <div>
-        <Nav />
         <Timeline />
         <Clock format={'HH:mm:ss'} ticking={true} timezone={'EU/Bratislava'} className="hodiny"/>
-        <p className="hodiny">{year} {month<10?`0${month}`:`${month}`} {date}</p>
+        <p className="hodiny">{date} {month<10?`0${month}`:`${month}`} {year}  </p>
       </div>
     );
 }

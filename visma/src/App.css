@@ -1,3 +1,7 @@
+body{
+  font-family: 'Ubuntu', sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -102,7 +106,9 @@
 }
 
 .hodiny {
-	font-size: 100px;
+  font-family: 'Ubuntu', sans-serif;
+  font-variant: normal;
+  font-size: 5em;
 	text-align: center;
 	width: 100%;
 	position: absolute;
