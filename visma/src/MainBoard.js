@@ -3,6 +3,7 @@ import Nav from './nav';
 import Timeline from './timeline';
 import Filter from './filter';
 import FilterEvent from './filterEvent';
+import Footer from './footer';
 
 function nav() {
   return (
@@ -10,7 +11,8 @@ function nav() {
         <Nav />
         <Timeline />
         <FilterEvent /> 
-        <Filter />   
+        <Filter /> 
+        <Footer />  
     </div>
   );
 }
