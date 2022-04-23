@@ -1,33 +1,32 @@
 import React from "react"
 import Nav from './nav';
-import {Form,Button, Card} from 'react-bootstrap'
+import {Form, Button, Card} from 'react-bootstrap'
+import Calendar from 'react-calendar';
+
 
 
 function NewEvent() {
   return (
-      <div>
+      <div className="formular">
           <Nav />
-          <Card>
-            <Card.Body>
-                <h2 className='text-center mb-4'> NEW EVENT</h2>
+          <h2> NEW EVENT</h2>
+          <Card className="teloCard">
+            <Card.Body >
                 <Form>
                     <Form.Group id="name">
-                        <Form.Label>Name of event</Form.Label>
-                        <Form.Control type="text" required/>
+                        <Form.Control type="text" required value="Pridaj meno eventu" className="formik"/>
                     </Form.Group>
                     <Form.Group id="desctiption">
-                        <Form.Label>Desctiption</Form.Label>
-                        <Form.Control type="text"/>
+                        <Form.Control type="text" required value="Pridaj popis eventu" className="formik"/>
                     </Form.Group>
-                    <Form.Group id="date">
-                        <Form.Label>Date</Form.Label>
-                        <Form.Control type="text"/>
+                    <Form.Group id="tag">
+                        <Form.Control type="text" required value="Pridaj tag" className="formik"/>
                     </Form.Group>
                     <Form.Group id="photo">
-                        <Form.Label>photo</Form.Label>
-                        <Form.Control type="text"/>
+                        <Form.Control type="file" className="custom-file-upload"/>
                     </Form.Group>
-                    <Button className="w-100 mt-4" type="submit">Log in</Button>
+                    <Button type="submit">Pridať event</Button>
+                    <Calendar className="formik"/>
                 </Form>
             </Card.Body>
         </Card>
