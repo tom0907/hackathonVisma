@@ -7,7 +7,7 @@ function event() {
   return (
       <div>
           <Nav />
-            tu budze jeden komponenticek 
+            <div className="qr"></div>
 
       </div>
   )
