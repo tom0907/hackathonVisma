@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+.Nav {
+  text-align: center;
+  padding-top: 2%;
+}
+
+.komponent {
+  border-radius: 25px;
+  padding: 20px;
+  width: 20%;
+  height: 400px; 
+  float: left;
+}
+
+
+.imgg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  float: left;
+}
+
