@@ -1,20 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-
-import Nav from './nav';
-import Timeline from './timeline';
-import Filter from './filter';
-import Komponenticek from './komponentik';
 import reportWebVitals from './reportWebVitals';
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Nav />
-    <Timeline />
-    <Filter />
-    <Komponenticek />
+    <App />
   </React.StrictMode>
 );
 
