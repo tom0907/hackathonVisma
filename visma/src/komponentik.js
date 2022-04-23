@@ -1,20 +1,16 @@
 import './App.css';
+import Tag from './text';
 
 function komponentik() {
   return (
     <div className="komponent">
+        <Tag />
             <img 
       src="https://office-insider-media.azurefd.net/media/2020/06/landscape_vp1_539x349_0000s_0007_514410153.jpg"
       alt="new"
       className='imgg'
       /> 
-                  <img 
-      src="https://office-insider-media.azurefd.net/media/2020/06/landscape_vp1_539x349_0000s_0007_514410153.jpg"
-      alt="new"
-      className='imgg'
-      />   
     </div>
-    
   );
 }
 
