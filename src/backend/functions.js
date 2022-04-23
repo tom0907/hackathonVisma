@@ -1,8 +1,6 @@
 import {uploadImage} from "src/database/databaseHandler"
-import { QRCodeSVG } from '@cheprasov/qrcode';
 
 var reader = new FileReader();
-var ftp = new Packages.org.apache.commons.net.ftp.FTPClient();
 
 function execUpload(){
     document.getElementById('file').click();
