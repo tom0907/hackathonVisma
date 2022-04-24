@@ -2,8 +2,8 @@ CREATE TABLE timeline (
     id SERIAL,
     title TEXT,
     tag TEXT,
-    body_id TEXT,
-    due_date TEXT,
+    body_id INTEGER,
+    due_date DATE,
     created_at TIMESTAMP
                       );
 
@@ -15,4 +15,5 @@ CREATE TABLE images (
 CREATE TABLE contents (
     id SERIAL,
     body TEXT
-)
+);
+

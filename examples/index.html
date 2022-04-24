@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TEST page</title>
+    <script type="module" src="/src/backend/functions.js"></script>
+</head>
+<body>
+
+<input type="uploadfile" style="display:none" id="uploadfile" hidden/>
+<a onclick=console.log(execUpload())>UPLOAD FILE</a>
+
+
+
+<input name="downloadid" type="text" maxlength="512" id="downloadid"/>
+<a onclick=console.log(execDownload())>DOWNLOAD FILE</a>
+<iframe id="downloadfile" style="display:none;"></iframe>
+<script>
+
+</script>
+
+</body>
+</html>

@@ -3,11 +3,11 @@ import {uploadImage} from "src/database/databaseHandler"
 var reader = new FileReader();
 
 function execUpload(){
-    document.getElementById('file').click();
-    document.getElementById('file').addEventListener("change", function (ev) {
-        let file = document.getElementById('file').files[0];
+    document.getElementById('uploadfile').click();
+    document.getElementById('uploadfile').addEventListener("change", function (ev) {
+        let file = document.getElementById('uploadfile').files[0];
         reader.readAsDataURL(file);
-        uploadImage(reader.result);
+        return uploadImage(reader.result);
     })
 }
 
@@ -20,4 +20,8 @@ function generateQR(url) {
     qrCode.makeCode(url);
 
 }
+
+function execDownload() {
+    document.getElementById('downloadfile').src = getImage(document.getElementById('downloadfile'));
+};
 

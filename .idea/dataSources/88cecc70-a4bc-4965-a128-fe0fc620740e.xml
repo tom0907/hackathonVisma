@@ -12,7 +12,7 @@
 13756||10|C|G
 13756||10|T|G</Grants>
       <ServerVersion>14.2</ServerVersion>
-      <StartupTime>1650732747</StartupTime>
+      <StartupTime>1650757520</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -92505,16 +92505,16 @@ umserver</ColNames>
       <TypeId>25</TypeId>
     </column>
     <column id="9343" parent="5663" name="body_id">
-      <DataType>text|0s</DataType>
+      <DataType>integer|0s</DataType>
       <Position>4</Position>
       <StateNumber>735</StateNumber>
-      <TypeId>25</TypeId>
+      <TypeId>23</TypeId>
     </column>
     <column id="9344" parent="5663" name="due_date">
-      <DataType>text|0s</DataType>
+      <DataType>date|0s</DataType>
       <Position>5</Position>
       <StateNumber>735</StateNumber>
-      <TypeId>25</TypeId>
+      <TypeId>1082</TypeId>
     </column>
     <column id="9345" parent="5663" name="created_at">
       <DataType>timestamp|0s</DataType>
