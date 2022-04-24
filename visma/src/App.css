@@ -68,6 +68,7 @@ body{
   right: 27%;
   width: 155%;
   height: 100%;
+  border-radius: 15%;
 }
 
 
@@ -85,21 +86,13 @@ body{
   text-align: center;
 }
 
-.formik {
-  width: 60%;
-  border-radius: 25px;
-  background-color: white;
-  height: 100px;
-  margin: 20px;
-  font-size: 30px;
-}
-
 .teloCard {
   width: 80%;
   background-color: lightgrey;
-  height: 800px;
+  height: 1100px;
   border-radius: 25px;
   margin: 0 auto;
+  margin-bottom: 5%;
 }
 
 .custom-file-upload {
@@ -116,15 +109,6 @@ body{
 	text-align: center;
 	width: 100%;
 	position: absolute;
-}
-.tag{
-  font-size: 0.5em;
-  width: 40%;
-  background-color: blueviolet;
-  height: 5%;
-  color: white;
-  border-radius: 20%;
-  margin-left: 30%;
 }
 
 .podnadpis{
@@ -207,3 +191,110 @@ h1{
 }
 
 
+.tag{
+  font-size: 0.5em;
+  width: 40%;
+  background-color: #E8FC25;
+  height: 5%;
+  color: white;
+  border-radius: 20%;
+  margin-left: 30%;
+}
+
+
+.tag1{
+  font-size: 0.5em;
+  width: 40%;
+  background-color: #93002c;
+  height: 5%;
+  color: white;
+  border-radius: 20%;
+  margin-left: 30%;
+}
+
+
+.tag2{
+  font-size: 0.5em;
+  width: 40%;
+  background-color: #b5762b;
+  height: 5%;
+  color: white;
+  border-radius: 20%;
+  margin-left: 30%;
+}
+
+
+.tag3{
+  font-size: 0.5em;
+  width: 40%;
+  background-color: #02d1e4;
+  height: 5%;
+  color: white;
+  border-radius: 20%;
+  margin-left: 30%;
+}
+
+.formik {
+  width: 90%;
+  border-radius: 25px;
+  background-color: white;
+  height: 100px;
+  margin: 20px;
+  font-size: 15px;
+}
+
+.formik1 {
+  width: 90%;
+  border-radius: 25px;
+  background-color: white;
+  height: 300px;
+  margin: 20px;
+  font-size: 15px;
+}
+
+.formik2 {
+  width: 90%;
+  border-radius: 25px;
+  background-color: white;
+  height: 100px;
+  margin: 20px;
+  font-size: 15px;
+}
+
+.formik3 {
+  width: 80%;
+  border-radius: 25px;
+  background-color: white;
+  height: 200px;
+  margin: 20px;
+  font-size: 15px;
+}
+
+.kek{
+  background-color: #007ACA;
+  padding: 2%;
+  width: 20%;
+  margin: 1%;
+  border-radius: 10%;
+  margin-left: 40%;
+  text-decoration: none;
+  color: white;
+}
+
+.kik{
+  margin-left: 35%;
+}
+
+.kak{
+  text-decoration: none;
+}
+
+.kok{
+  background-color: white;
+  padding: 2%;
+  width: 20%;
+  margin: 1%;
+  border-radius: 10%;
+  margin-left: 40%;
+  text-decoration: none;
+}

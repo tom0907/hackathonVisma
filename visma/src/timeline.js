@@ -1,6 +1,9 @@
 import './App.css';
 //import HorizontalScroll from 'react-scroll-horizontal'
 import Komponenticek from './komponentik';
+import Komponenticek1 from './komponentik1';
+import Komponenticek2 from './komponentik2';
+import Komponenticek3 from './komponentik3';
 
 function timeline() {
   //const child = {width: "300em",height: "20%"}
@@ -10,7 +13,7 @@ function timeline() {
 
     <div className="timeline">
       
-      <Komponenticek /> <Komponenticek /> <Komponenticek /> <Komponenticek /> <Komponenticek /> <Komponenticek /> <Komponenticek /> <Komponenticek /> <Komponenticek /> <Komponenticek /> <Komponenticek /> <Komponenticek /> 
+      <Komponenticek /> <Komponenticek1 /> <Komponenticek2 /> <Komponenticek3 /> <Komponenticek /> <Komponenticek1 /> <Komponenticek2 /> <Komponenticek3 /><Komponenticek /> <Komponenticek1 /> <Komponenticek2 /> <Komponenticek3 /><Komponenticek /> <Komponenticek1 /> <Komponenticek2 /> <Komponenticek3 /><Komponenticek /> <Komponenticek1 /> <Komponenticek2 /> <Komponenticek3 /><Komponenticek /> <Komponenticek1 /> <Komponenticek2 /> <Komponenticek3 />
 
       
     </div>
