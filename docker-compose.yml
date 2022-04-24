@@ -16,11 +16,12 @@ services:
   react-app:
     build:
       context: visma/
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.prod
     volumes:
       - '.:/app'
       - '/app/node_modules'
     ports:
       - "3001:3000"
+      - "80:80"
     environment:
       - CHOKIDAR_USEPOLLING=true
