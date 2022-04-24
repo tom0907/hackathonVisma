@@ -4,15 +4,17 @@ FROM node:alpine
 # set working directory
 WORKDIR /app
 
+ENV PATH /app/node_modules/.bin:$PATH
+
 # install app dependencies
 COPY package.json ./
 COPY package-lock.json ./
-COPY ./ ./
+COPY . ./
 RUN npm install
 RUN npm install react-scripts@3.4.1 -g --silent
 
 # add app
-#COPY src ./
+COPY . ./
 
 # start app
 CMD ["npm", "run", "start"]
