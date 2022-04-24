@@ -14,13 +14,14 @@ function NewEvent() {
           <Card className="teloCard">
             <Card.Body >
                 <Form>
-                    <Form.Group id="name">
-                        <Form.Control type="text" required value="Pridaj meno eventu" className="formik"/>
+                    <Form.Group id="text">
+                        <Form.Label>Email</Form.Label>
+                        <Form.Control type="text" value="Pridaj meno eventu" className="formik"/>
                     </Form.Group>
-                    <Form.Group id="desctiption">
+                    <Form.Group id="text">
                         <Form.Control type="text" required value="Pridaj popis eventu" className="formik1"/>
                     </Form.Group>
-                    <Form.Group id="tag">
+                    <Form.Group id="text">
                         <Form.Control type="text" required value="Pridaj tag" className="formik2"/>
                     </Form.Group>
                     <div className="kik"><Calendar /></div>
