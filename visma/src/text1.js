@@ -9,11 +9,11 @@ function text() {
 
   return (
     <div className='abc'>
-    <div className="tag2">
-        TOURNAMENT
+    <div className="tag">
+        NEWCOMER
     </div >
     <div className="podnadpis">
-        Peter Martin
+        Miroslav Binas
         </div>
         <div className="cas">
         {date}.{month<10?`${month}`:`${month}`}.{year}
