@@ -28,6 +28,31 @@ body{
   color: white;
 }
 
+.Nav a{
+  color: inherit;
+  text-decoration: none;
+  font:Open Sans;
+  font-size:18;
+  font-weight: bold;
+  padding:2%;
+}
+
+.Nav a:hover{
+    text-decoration: underline;
+    font-size:18;
+    font-weight: bold;
+    padding:2%;
+}
+
+.Nav {
+  box-shadow: 0 5px 10px rgba(22,62,89,.08);
+  width: 100vw;
+  content: "";
+  height: 3rem;
+  text-align: inherit;
+
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -249,7 +274,7 @@ h1{
   background-color: white;
   height: 300px;
   margin: 20px;
-  font-size: 15px;
+  font-size: 15px; 
 }
 
 .formik2 {
@@ -281,6 +306,17 @@ h1{
   color: white;
 }
 
+.kek:hover{
+  background-color: #0054ca;
+  padding: 2%;
+  width: 20%;
+  margin: 1%;
+  border-radius: 10%;
+  margin-left: 40%;
+  text-decoration: none;
+  color: white;
+}
+
 .kik{
   margin-left: 35%;
 }
@@ -298,3 +334,5 @@ h1{
   margin-left: 40%;
   text-decoration: none;
 }
+
+

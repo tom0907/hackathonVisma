@@ -8,11 +8,11 @@ function nav() {
       alt="new"
       style={{ float: 'left', width: '10%',paddingLeft:"3%"}}
       />    
-       <a href="https://www.w3schools.com" style={{ color: 'inherit', textDecoration: 'inherit', font:'Open Sans', fontSize:18,fontWeight: "bold",padding:"2%"}}>Úvod</a> 
-       <a href="https://www.visma.sk/produkty/" style={{ color: 'inherit', textDecoration: 'inherit', font:'Open Sans', fontSize:18,fontWeight: "bold"}}>Produkty</a> 
-       <a href="https://www.visma.sk/kariera/" style={{ color: 'inherit', textDecoration: 'inherit', font:'Open Sans', fontSize:18,fontWeight: "bold",padding:"2%"}}>Kariéra</a> 
-       <a href="https://www.visma.sk/blog" style={{ color: 'inherit', textDecoration: 'inherit', font:'Open Sans', fontSize:18,fontWeight: "bold"}}>Blog</a> 
-       <a href="https://www.visma.sk/kontakt/" style={{ color: 'inherit', textDecoration: 'inherit', font:'Open Sans', fontSize:18,fontWeight: "bold",padding:"2%"}}>Kontakt</a> 
+       <a href="https://www.w3schools.com">Úvod</a> 
+       <a href="https://www.visma.sk/produkty/">Produkty</a> 
+       <a href="https://www.visma.sk/kariera/">Kariéra</a> 
+       <a href="https://www.visma.sk/blog">Blog</a> 
+       <a href="https://www.visma.sk/kontakt/">Kontakt</a> 
     </div>
   );
 }
